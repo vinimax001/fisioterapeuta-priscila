@@ -240,4 +240,69 @@ main {
   footer p:hover {
     opacity: 1;
   }
+
+  /* ======= THEMES BUTTON ======= */
+  
+  .themes {
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  
+    width: 5rem;
+    height: 5rem;
+  
+    margin-bottom: 1.5rem;
+  }
+  
+  .themes #light-sun {
+    display: none;
+  
+    width: 80%;
+    height: 80%;
+  
+    background-color: black;
+    padding: 0.7rem;
+    border-radius: 50%;
+  }
+  
+  .themes #dark-moon {
+    width: 80%;
+    height: 80%;
+  
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+  
+    transition: 400ms;
+  }
+  
+  .themes #dark-moon:hover {
+    width: 90%;
+    height: 90%;
+  
+    cursor: pointer;
+  }
+  
+  body.dark #dark-moon {
+    display: none;
+  }
+  
+  body.dark .themes #light-sun {
+    display: initial;
+  
+    transition: 400ms;
+  }
+  
+  body.dark .themes #light-sun:hover {
+    width: 90%;
+    height: 90%;
+  
+    cursor: pointer;
+  }
+
   
